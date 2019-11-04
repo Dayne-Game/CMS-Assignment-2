@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: Dayne-Game/CMS-Assignment-2
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: posts
+    label: Posts
+    folder: posts
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
+      - { name: intro, label: Intro }
+      - { name: body, label: Body, widget: markdown }
